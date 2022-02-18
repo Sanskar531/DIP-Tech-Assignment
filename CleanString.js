@@ -1,10 +1,11 @@
 function CleanString(s) {
-  const queue = [];
+  //Sorry! Misnamed var in a hurry!
+  const stack = [];
   for (let i = 0; i < s.length; ++i) {
-    if (s[i] != "#") queue.push(s[i]);
-    else if (queue.length != 0) queue.pop();
+    if (s[i] != "#") stack.push(s[i]);
+    else if (queue.length != 0) stack.pop();
   }
-  return queue.join("");
+  return stack.join("");
 }
 
 console.log(CleanString("XyZ##@#####"));

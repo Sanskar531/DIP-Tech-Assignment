@@ -1,4 +1,5 @@
 function MaxDiffLength(a1, a2) {
+  //Couldn't optimize on time so had to leave it like this.
   let a1Max = Number.NEGATIVE_INFINITY;
   let a1Min = Number.POSITIVE_INFINITY;
   let a2Min = Number.POSITIVE_INFINITY;
