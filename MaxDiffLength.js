@@ -20,7 +20,7 @@ function MaxDiffLength(a1, a2) {
 
 function findLongestAndShortestInArr(a) {
   let aMax = Number.NEGATIVE_INFINITY;
-  let aMin = 0;
+  let aMin = Number.POSITIVE_INFINITY;
   for (let i = 0; i < a.length; i++) {
     if (aMax < a[i].length) {
       aMax = a[i].length;
@@ -43,4 +43,4 @@ function findLongestInArr(a) {
 }
 
 //Test Cases
-console.log(MaxDiffLength([""], [""]));
+console.log(MaxDiffLength(["112121212"], ["2132"]));
