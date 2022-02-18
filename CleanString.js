@@ -1,5 +1,9 @@
 function CleanString(s) {
-  //Sorry! Misnamed var in a hurry!
+  /*
+    Used Standard JS array to recreate a stack 
+    Pushed alphabets onto the stack and removed the last element when "#"
+    is encountered 
+  */
   const stack = [];
   for (let i = 0; i < s.length; ++i) {
     if (s[i] != "#") stack.push(s[i]);
